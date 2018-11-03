@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="254dp"
+        android:layout_marginLeft="254dp"
+        android:layout_marginRight="254dp"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dialog_title"
+        android:textColor="#0099cc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskEditText"
+        android:layout_width="431dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true"
+        android:text="@string/task"
+        android:textColor="#4d4d4d"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/taskLabel"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle"
+        tools:text=" " />
+
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+
+        android:layout_marginTop="32dp"
+        android:calendarViewShown="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskEditText" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="76dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="118dp"
+        android:text="@string/date_label"
+        android:textColor="#0099cc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskEditText"
+        tools:text="Date: " />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="274dp"
+        android:background="#0099cc"
+        android:text="@string/OK_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskEditText" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="30dp"
+        android:background="#0099cc"
+        android:text="@string/cancel_button"
+        app:layout_constraintEnd_toStartOf="@+id/okButton"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/taskLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="89dp"
+        android:text="@string/task_text_view"
+        android:textColor="#0099cc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/taskEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Task: " />
+
+</android.support.constraint.ConstraintLayout>

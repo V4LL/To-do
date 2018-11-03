@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">To-do</string>
+    <string name="add_button" />
+    <string name="dialog_title">TO-DO</string>
+    <string name="date_label">Date</string>
+    <string name="OK_button">OK</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="task">.</string>
+    <string name="task_text_view">Task: </string>
+    <string name="no_todo_label"> You don\'t have any todos</string>
+</resources>
